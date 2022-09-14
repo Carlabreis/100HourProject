@@ -22,11 +22,11 @@
       <div class="new_dish">
         <div class="form-group">
           <label for="dish" class="text-light">Dish</label>
-          <input type="hidden" name="id" value="" />
+          <input type="hidden" name="id" value="<%= dish._id %>" />
           <input
             type="text"
             name="dish"
-            value=""
+            value="<%= dish.dish %>"
             placeholder="e.g. Chicken Parm"
           />
         </div>
@@ -39,6 +39,7 @@
               id="radio-4"
               name="category"
               value="Appetizer"
+              <%= dish.category === 'Appetizer' ? 'checked' : '' %>
             />
             <label for="radio-4" class="radio-label">Appetizer</label>
           </div>
@@ -48,6 +49,7 @@
               id="radio-5"
               name="category"
               value="Entree"
+              <%= dish.category === 'Entree' ? 'checked' : '' %>
             />
             <label for="radio-5" class="radio-label">Entree</label>
           </div>
@@ -57,6 +59,7 @@
               id="radio-6"
               name="category"
               value="Salad"
+              <%= dish.category === 'Salad' ? 'checked' : '' %>
             />
             <label for="radio-6" class="radio-label">Salad</label>
           </div>
@@ -66,23 +69,24 @@
               id="radio-7"
               name="category"
               value="Dessert"
+              <%= dish.category === 'Dessert' ? 'checked' : '' %>
             />
             <label for="radio-7" class="radio-label">Dessert</label>
           </div>
           <div class="radio inline">
-            <input type="radio" id="radio-8" name="category" value="Soup" />
+            <input type="radio" id="radio-8" name="category" value="Soup" <%= dish.category === 'Soup' ? 'checked' : '' %> />
             <label for="radio-8" class="radio-label">Soup</label>
           </div>
         </div>
 
         <div class="form-group">
           <label for="ingredients" class="text-light">Ingredients</label>
-          <input type="text" name="ingredients" value="" placeholder="" />
+          <input type="text" name="ingredients" value="<%= dish.ingredients %>" placeholder="" />
         </div>
 
         <div class="form-group">
           <label for="price" class="text-light">Price</label>
-          <input type="text" name="price" value="" placeholder="$0.00" />
+          <input type="text" name="price" value="<%= dish.price %>" placeholder="$0.00" />
         </div>
 
         <div class="form-group">
@@ -93,6 +97,7 @@
               id="radio-2"
               name="availability"
               value="Available"
+              <%= dish.availability === 'Available' ? 'checked' : '' %>
             />
             <label for="radio-2" class="radio-label">Available</label>
           </div>
@@ -102,6 +107,7 @@
               id="radio-3"
               name="availability"
               value="Unavailable"
+              <%= dish.availability === 'Unavailable' ? 'checked' : '' %>
             />
             <label for="radio-3" class="radio-label">Unavailable</label>
           </div>

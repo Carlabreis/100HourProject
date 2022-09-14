@@ -21,7 +21,8 @@ exports.create = (req, res) => {
   dish
     .save(dish)
     .then(data => {
-      res.send(data);
+      // res.send(data);
+      res.redirect("/add-dish");
     })
     .catch(err => {
       res.status(500).send({

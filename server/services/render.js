@@ -5,7 +5,6 @@ exports.homeRoutes = (req, res) => {
   axios
     .get("http://localhost:3000/api/dishes")
     .then(function(response) {
-      console.log(response.data);
       res.render("index", { dishes: response.data });
     })
     .catch(err => {
@@ -18,5 +17,14 @@ exports.add_dish = (req, res) => {
 };
 
 exports.update_dish = (req, res) => {
-  res.render("update_dish");
+  axios
+    .get("http://localhost:3000/api/dishes", {
+      params: { id: req.query.id }
+    })
+    .then(function(dishdata) {
+      res.render("update_dish", { dish: dishdata.data });
+    })
+    .catch(err => {
+      res.send(err);
+    });
 };
