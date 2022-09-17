@@ -33,15 +33,34 @@ exports.create = (req, res) => {
 
 //retrive and return all dishes / retrive and return a single dish
 exports.find = (req, res) => {
-  Dishdb.find()
-    .then(dish => {
-      res.send(dish);
-    })
-    .catch(err => {
-      res.status(500).send({
-        message: err.message || "Error occur while retrieving user information"
+  if (req.query.id) {
+    const id = req.query.id;
+
+    Dishdb.findById(id)
+      .then(data => {
+        if (!data) {
+          res.status(404).send({ message: `Not found dish with id ${id}` });
+        } else {
+          res.send(data);
+        }
+      })
+      .catch(err => {
+        res
+          .status(500)
+          .send({ message: `Error retrieving dish with id ${id}` });
       });
-    });
+  } else {
+    Dishdb.find()
+      .then(dish => {
+        res.send(dish);
+      })
+      .catch(err => {
+        res.status(500).send({
+          message:
+            err.message || "Error occur while retrieving user information"
+        });
+      });
+  }
 };
 
 // update a new identified dish by dish id
