@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 // schema allow to define shape and content of the document
-var schema = newmongoose.Schema({
+var schema = new mongoose.Schema({
   dish: {
     type: String,
     required: true
