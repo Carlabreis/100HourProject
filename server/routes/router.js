@@ -2,6 +2,7 @@ const express = require("express");
 const route = express.Router();
 
 const services = require("../services/render");
+const controller = require("../controller/controller");
 
 /**
  * @description Root Route
@@ -20,5 +21,11 @@ route.get("/add-dish", services.add_dish);
  * @method GET /update-dish
  */
 route.get("/update-dish", services.update_dish);
+
+// API
+route.post("/api/dishes", controller.create);
+route.get("/api/dishes", controller.find);
+route.put("/api/dishes/:id", controller.update);
+route.delete("/api/dishes/:id", controller.delete);
 
 module.exports = route;
