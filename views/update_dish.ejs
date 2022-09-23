@@ -33,49 +33,51 @@
 
         <div class="form-group">
           <label for="category" class="text-light">Category</label>
-          <div class="radio inline">
-            <input
-              type="radio"
-              id="radio-4"
-              name="category"
-              value="Appetizer"
-              <%= dish.category === 'Appetizer' ? 'checked' : '' %>
-            />
-            <label for="radio-4" class="radio-label">Appetizer</label>
-          </div>
-          <div class="radio inline">
-            <input
-              type="radio"
-              id="radio-5"
-              name="category"
-              value="Entree"
-              <%= dish.category === 'Entree' ? 'checked' : '' %>
-            />
-            <label for="radio-5" class="radio-label">Entree</label>
-          </div>
-          <div class="radio inline">
-            <input
-              type="radio"
-              id="radio-6"
-              name="category"
-              value="Salad"
-              <%= dish.category === 'Salad' ? 'checked' : '' %>
-            />
-            <label for="radio-6" class="radio-label">Salad</label>
-          </div>
-          <div class="radio inline">
-            <input
-              type="radio"
-              id="radio-7"
-              name="category"
-              value="Dessert"
-              <%= dish.category === 'Dessert' ? 'checked' : '' %>
-            />
-            <label for="radio-7" class="radio-label">Dessert</label>
-          </div>
-          <div class="radio inline">
-            <input type="radio" id="radio-8" name="category" value="Soup" <%= dish.category === 'Soup' ? 'checked' : '' %> />
-            <label for="radio-8" class="radio-label">Soup</label>
+          <div>
+            <div class="radio inline">
+              <input
+                type="radio"
+                id="radio-4"
+                name="category"
+                value="Appetizer"
+                <%= dish.category === 'Appetizer' ? 'checked' : '' %>
+              />
+              <label for="radio-4" class="radio-label">Appetizer</label>
+            </div>
+            <div class="radio inline">
+              <input
+                type="radio"
+                id="radio-5"
+                name="category"
+                value="Entree"
+                <%= dish.category === 'Entree' ? 'checked' : '' %>
+              />
+              <label for="radio-5" class="radio-label">Entree</label>
+            </div>
+            <div class="radio inline">
+              <input
+                type="radio"
+                id="radio-6"
+                name="category"
+                value="Salad"
+                <%= dish.category === 'Salad' ? 'checked' : '' %>
+              />
+              <label for="radio-6" class="radio-label">Salad</label>
+            </div>
+            <div class="radio inline">
+              <input
+                type="radio"
+                id="radio-7"
+                name="category"
+                value="Dessert"
+                <%= dish.category === 'Dessert' ? 'checked' : '' %>
+              />
+              <label for="radio-7" class="radio-label">Dessert</label>
+            </div>
+            <div class="radio inline">
+              <input type="radio" id="radio-8" name="category" value="Soup" <%= dish.category === 'Soup' ? 'checked' : '' %> />
+              <label for="radio-8" class="radio-label">Soup</label>
+            </div>
           </div>
         </div>
 
@@ -96,26 +98,28 @@
 
         <div class="form-group">
           <label for="availability" class="text-light">Availability</label>
-          <div class="radio inline">
-            <input
-              type="radio"
-              id="radio-2"
-              name="availability"
-              value="Available"
-              <%= dish.availability === 'Available' ? 'checked' : '' %>
-            />
-            <label for="radio-2" class="radio-label">Available</label>
-          </div>
-          <div class="radio inline">
-            <input
-              type="radio"
-              id="radio-3"
-              name="availability"
-              value="Unavailable"
-              <%= dish.availability === 'Unavailable' ? 'checked' : '' %>
-            />
-            <label for="radio-3" class="radio-label">Unavailable</label>
-          </div>
+          <div>
+            <div class="radio inline">
+              <input
+                type="radio"
+                id="radio-2"
+                name="availability"
+                value="Available"
+                <%= dish.availability === 'Available' ? 'checked' : '' %>
+              />
+              <label for="radio-2" class="radio-label">Available</label>
+            </div>
+            <div class="radio inline">
+              <input
+                type="radio"
+                id="radio-3"
+                name="availability"
+                value="Unavailable"
+                <%= dish.availability === 'Unavailable' ? 'checked' : '' %>
+              />
+              <label for="radio-3" class="radio-label">Unavailable</label>
+            </div>
+          </div>          
         </div>
 
         <div class="form-group">
