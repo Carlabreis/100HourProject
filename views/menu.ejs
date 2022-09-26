@@ -9,61 +9,37 @@
     <form action="/" method="POST">
       <h2>Appetizers</h2>
       <table class="table">
-        <thead class="thead-dark">
-          <tr>
-            <th>Dish</th>
-            <th>Description</th>
-            <th>Price</th>
-            <th>Availability</th>
-          </tr>
-        </thead>
         <tbody>
           <%- include('include/_menuitems') %>
         </tbody>
       </table>
       <h2>Main</h2>
       <table class="table">
-        <thead class="thead-dark">
-          <tr>
-            <th>Dish</th>
-            <th>Description</th>
-            <th>Price</th>
-            <th>Availability</th>
-          </tr>
-        </thead>
         <tbody>
           <%- include('include/_menuitems') %>
         </tbody>
       </table>
       <h2>Salads</h2>
       <table class="table">
-        <thead class="thead-dark">
-          <tr>
-            <th>Dish</th>
-            <th>Description</th>
-            <th>Price</th>
-            <th>Availability</th>
-          </tr>
-        </thead>
         <tbody>
           <%- include('include/_menuitems') %>
         </tbody>
       </table>
       <h2>Dessert</h2>
       <table class="table">
-        <thead class="thead-dark">
-          <tr>
-            <th>Dish</th>
-            <th>Description</th>
-            <th>Price</th>
-            <th>Availability</th>
-          </tr>
-        </thead>
         <tbody>
           <%- include('include/_menuitems') %>
         </tbody>
       </table>
     </form>
+    <div class="form-group">
+      <label for="availability" class="text-light">Any hypersensibilities? </label>
+      <div class="inline">
+        <input type="text" name="hypersensibility" value=""
+        />
+      </div>
+    </div>
+
     <div class="box-nav d-flex justify-between">
       <a href="/" class="border-shadow">
         <span class="text-gradient"
