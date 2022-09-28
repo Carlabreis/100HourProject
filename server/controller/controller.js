@@ -12,6 +12,7 @@ exports.create = (req, res) => {
   const dish = new Dishdb({
     dish: req.body.dish,
     category: req.body.category,
+    description: req.body.description,
     ingredients: req.body.ingredients,
     price: req.body.price,
     availability: req.body.availability
