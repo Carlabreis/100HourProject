@@ -28,3 +28,15 @@ exports.update_dish = (req, res) => {
       res.send(err);
     });
 };
+
+exports.menu = (req, res) => {
+  // make a get request to api/dishes
+  axios
+    .get("http://localhost:3000/api/dishes")
+    .then(function(response) {
+      res.render("menu", { dishes: response.data });
+    })
+    .catch(err => {
+      res.send(err);
+    });
+};

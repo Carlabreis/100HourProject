@@ -1,7 +1,7 @@
 /*csslint empty-rules: false*/
 
 :root {
-  --dark: #2b2d42;
+  --dark: #283d3b;
   --light: #adb5bd;
   --border: #dee2e6;
   --border-btn: #edf2f4;
@@ -59,14 +59,14 @@ a {
 }
 
 .text-gradient {
-  background: linear-gradient(to right, #8e2de2, #4a00e0);
+  background: linear-gradient(to right, #283d3b, #197278);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 #header nav {
-  background-color: #06d6a0;
+  background-color: #c44536;
   padding: 1em 0;
   width: 100%;
 }
@@ -105,7 +105,7 @@ table {
 }
 
 .table tr:hover {
-  background-color: #06d6a0;
+  background-color: #c44536;
 }
 
 .table tr:hover td > a {
@@ -205,13 +205,13 @@ table {
 }
 
 .radio input[type="radio"]:checked + .radio-label:before {
-  background-color: #16db93;
+  background-color: #197278;
   box-shadow: inset 0 0 0 4px #e9ecef;
 }
 
 .radio input[type="radio"]:focus + .radio-label:before {
   outline: none;
-  border-color: #16db93;
+  border-color: #197278;
 }
 
 .radio input[type="radio"]:disabled + .radio-label:before {
@@ -223,9 +223,10 @@ table {
 /**************** save button ******************/
 #update_dish .form-group .btn,
 #add_dish .form-group .btn {
+  color: var(--border);
   width: 100%;
   padding: 0.9em 1em;
-  background-color: #16db93;
+  background-color: #283d3b;
   border: none;
   font-family: "Amatic SC", cursive;
   font-size: 1.5em;
@@ -236,6 +237,6 @@ table {
 
 #update_dish .form-group .btn:hover,
 #add_dish .form-group .btn:hover {
-  background-color: var(--dark);
+  background-color: #197278;
   color: var(--border);
 }

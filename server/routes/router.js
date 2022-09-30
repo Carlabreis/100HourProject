@@ -22,6 +22,12 @@ route.get("/add-dish", services.add_dish);
  */
 route.get("/update-dish", services.update_dish);
 
+/**
+ * @description menu Route
+ * @method GET /menu
+ */
+route.get("/menu", services.menu);
+
 // API
 route.post("/api/dishes", controller.create);
 route.get("/api/dishes", controller.find);
