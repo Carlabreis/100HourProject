@@ -22,6 +22,10 @@ var schema = new mongoose.Schema({
     type: String,
     required: true
   },
+  allergens: {
+    type: Array,
+    required: false
+  },
   price: {
     type: Number,
     required: true

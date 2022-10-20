@@ -15,6 +15,7 @@ exports.create = (req, res) => {
     description: req.body.description,
     ingredients: req.body.ingredients,
     diet: req.body.diet,
+    allergens: req.body.allergens,
     price: req.body.price,
     availability: req.body.availability
   });
