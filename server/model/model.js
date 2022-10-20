@@ -18,6 +18,10 @@ var schema = new mongoose.Schema({
     type: Array,
     required: true
   },
+  diet: {
+    type: String,
+    required: true
+  },
   price: {
     type: Number,
     required: true

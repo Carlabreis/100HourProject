@@ -14,6 +14,7 @@ exports.create = (req, res) => {
     category: req.body.category,
     description: req.body.description,
     ingredients: req.body.ingredients,
+    diet: req.body.diet,
     price: req.body.price,
     availability: req.body.availability
   });
