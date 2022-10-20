@@ -1,0 +1,19 @@
+<% for(var i =0; i < dishes.length; i++){ %>
+    <% if(dishes[i].category === 'Dessert'){ %>
+      <tr>
+        <td>
+          <%= dishes[i].dish %>
+        </td>
+        <td>
+          <%= dishes[i].description %>
+        </td>
+        <td>
+          $ <%= dishes[i].price %>
+        </td>
+        <td>
+          <%= dishes[i].availability %>
+        </td>
+      </tr>
+    <% } %>
+  <% } %>
+  
