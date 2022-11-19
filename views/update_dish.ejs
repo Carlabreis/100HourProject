@@ -141,11 +141,12 @@
             <div class="radio inline">
               <input
                 type="checkbox"
-                id="radio-milk"
+                id="radio-dairy"
                 name="allergens"
-                value="Milk"
+                value="Dairy"
+                <%= dish.allergens.includes('Dairy') ? 'checked' : '' %>
               />
-              <label for="radio-milk" class="radio-label">Milk</label>
+              <label for="radio-dairy" class="radio-label">Dairy</label>
             </div>
             <div class="radio inline">
               <input
@@ -153,6 +154,7 @@
                 id="radio-eggs"
                 name="allergens"
                 value="Eggs"
+                <%= dish.allergens.includes('Eggs') ? 'checked' : '' %>
               />
               <label for="radio-eggs" class="radio-label">Eggs</label>
             </div>
@@ -162,6 +164,7 @@
                 id="radio-fish"
                 name="allergens"
                 value="Fish"
+                <%= dish.allergens.includes('Fish') ? 'checked' : '' %>
               />
               <label for="radio-fish" class="radio-label">Fish</label>
             </div>
@@ -171,6 +174,7 @@
                 id="radio-shellfish"
                 name="allergens"
                 value="Shellfish"
+                <%= dish.allergens.includes('Shellfish') ? 'checked' : '' %>
               />
               <label for="radio-shellfish" class="radio-label">Shellfish</label>
             </div>
@@ -180,6 +184,7 @@
                 id="radio-treenuts"
                 name="allergens"
                 value="Tree-Nuts"
+                <%= dish.allergens.includes('Tree-Nuts') ? 'checked' : '' %>
               />
               <label for="radio-treenuts" class="radio-label">Tree Nuts</label>
             </div>
@@ -189,6 +194,7 @@
                 id="radio-peanuts"
                 name="allergens"
                 value="Peanuts"
+                <%= dish.allergens.includes('Peanuts') ? 'checked' : '' %>
               />
               <label for="radio-peanuts" class="radio-label">Peanuts</label>
             </div>
@@ -198,6 +204,7 @@
                 id="radio-wheat"
                 name="allergens"
                 value="Wheat"
+                <%= dish.allergens.includes('Wheat') ? 'checked' : '' %>
               />
               <label for="radio-wheat" class="radio-label">Wheat</label>
             </div>
@@ -207,8 +214,9 @@
                 id="radio-soy"
                 name="allergens"
                 value="Soy"
+                <%= dish.allergens.includes('Soy') ? 'checked' : '' %>
               />
-              <label for="radio-Soy" class="radio-label">Soy</label>
+              <label for="radio-soy" class="radio-label">Soy</label>
             </div>
             <div class="radio inline">
               <input
@@ -216,6 +224,7 @@
                 id="radio-gluten"
                 name="allergens"
                 value="Gluten"
+                <%= dish.allergens.includes('Gluten') ? 'checked' : '' %>
               />
               <label for="radio-gluten" class="radio-label">Gluten</label>
             </div>
@@ -225,6 +234,7 @@
                 id="radio-sesame"
                 name="allergens"
                 value="Sesame"
+                <%= dish.allergens.includes('Sesame') ? 'checked' : '' %>
               />
               <label for="radio-sesame" class="radio-label">Sesame</label>
             </div>

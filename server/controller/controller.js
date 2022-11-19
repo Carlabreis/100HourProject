@@ -87,6 +87,8 @@ exports.update = (req, res) => {
     .catch(err => {
       res.status(500).send({ message: "Error update dish information" });
     });
+
+    console.log(req.body);
 };
 
 // delete a dish with especified dish id in the request
