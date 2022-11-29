@@ -14,15 +14,14 @@ $("#update_dish").submit(function(event) {
 
   console.log(data);
 
-  var request = {
-    url: `http://localhost:3000/api/dishes/${data.id}`,
+  fetch(`http://localhost:3000/api/dishes/${data.id}`, {
     method: "PUT",
-    data: data
-  };
-
-  $.ajax(request).done(function(response) {
-    alert("Data Updated Successfully!");
-  });
+    body: new URLSearchParams(new FormData(event.currentTarget)).toString(),
+    headers: {
+      "content-type":"application/x-www-form-urlencoded"
+    }
+  })
+  alert("Data Updated Successfully!");
 });
 
 if (window.location.pathname == "/") {

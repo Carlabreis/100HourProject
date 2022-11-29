@@ -61,7 +61,7 @@ exports.find = (req, res) => {
       .catch(err => {
         res.status(500).send({
           message:
-            err.message || "Error occur while retrieving user information"
+            err.message || "Error occur while retrieving dish information"
         });
       });
   }
