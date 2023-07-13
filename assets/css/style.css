@@ -183,7 +183,8 @@ table {
 }
 
 #update_dish .form-group .radio,
-#add_dish .form-group .radio {
+#add_dish .form-group .radio,
+#hypersensitivities_filter .form-group .radio {
   margin: 1em 2em;
 }
 
